@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp4.MainPage">
+    <StackLayout BackgroundColor="Black">
+        <Label
+            x:Name="ResultLabel"
+            Text="0"
+            TextColor="White"
+            HorizontalTextAlignment="End"
+            VerticalTextAlignment="End"
+            FontAttributes="Bold"
+            FontSize="80"
+            HeightRequest="250"
+               />
+        <Grid ColumnSpacing="2" RowSpacing="2" HorizontalOptions="Center" VerticalOptions="Center" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="95"/>
+                <RowDefinition Height="95"/>
+                <RowDefinition Height="95"/>
+                <RowDefinition Height="95"/>
+                <RowDefinition Height="95"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="95"/>
+                <ColumnDefinition Width="95"/>
+                <ColumnDefinition Width="95"/>
+                <ColumnDefinition Width="95"/>
+            </Grid.ColumnDefinitions>
+
+            <Button
+                x:Name="C_Button"
+                Background="Gray"
+                Text="C"
+                TextColor="Black"
+                Grid.Row="0" Grid.Column="0"
+                FontSize="60"
+                Clicked="C_Button_Clicked"
+                />
+
+            <Button
+                x:Name="ChangeSign_Button"
+                Text="+/-"
+                TextColor="Black"
+                Background="Gray"
+                Grid.Row="0" Grid.Column="1"
+                FontSize="30"
+                Clicked="ChangeSign_Button_Clicked"
+                />
+            <Button 
+                x:Name="Mode_Button"
+                Text="%"
+                TextColor="Black"
+                Background="Gray"
+                Grid.Row="0" Grid.Column="2"
+                FontSize="60"
+                Clicked="Mode_Button_Clicked"
+                />
+            <Button 
+                x:Name="DivideButton"
+                Text="div"
+                TextColor="white"
+                Background="Orange"
+                Grid.Row="0" Grid.Column="3"
+                FontSize="40"
+                Clicked="DivideButton_Clicked"
+                />
+
+            <Button
+                x:Name="Button_7"
+                Background="Silver"
+                Text="7"
+                TextColor="Black"
+                Grid.Row="1" Grid.Column="0"
+                FontSize="60"
+                Clicked="Button_7_Clicked"
+                />
+
+            <Button
+                x:Name="Button_8"
+                Text="8"
+                TextColor="Black"
+                Background="Silver"
+                Grid.Row="1" Grid.Column="1"
+                FontSize="60"
+                Clicked="Button_8_Clicked"
+                />
+            <Button 
+                x:Name="Button_9"
+                Text="9"
+                TextColor="Black"
+                Background="Silver"
+                Grid.Row="1" Grid.Column="2"
+                FontSize="60"
+                Clicked="Button_9_Clicked"
+                />
+            <Button 
+                x:Name="Multiply_Button"
+                Text="X"
+                TextColor="white"
+                Background="Orange"
+                Grid.Row="1" Grid.Column="3"
+                FontSize="60"
+                Clicked="Multiply_Button_Clicked"
+                />
+
+            <Button
+                x:Name="Button_4"
+                Background="Silver"
+                Text="4" TextColor="Black" FontSize="60"
+                Grid.Row="2" Grid.Column="0"
+                Clicked="Button_4_Clicked"
+                />
+            <Button
+                x:Name="Button_5"
+                Text="5" TextColor="Black" FontSize="60"
+                Background="Silver"
+                Grid.Row="2" Grid.Column="1"
+                Clicked="Button_5_Clicked"
+                />
+            <Button 
+                x:Name="Button_6"
+                Text="6" TextColor="Black" FontSize="60" 
+                Background="Silver" 
+                Grid.Row="2" Grid.Column="2"
+                Clicked="Button_6_Clicked"
+                />
+            <Button 
+                x:Name="Substraction_Button"
+                Text="-" TextColor="white" FontSize="60"
+                Background="Orange"
+                Grid.Row="2" Grid.Column="3"
+                Clicked="Substraction_Button_Clicked"
+                />
+            <Button
+                x:Name="Button_1"
+                Background="Silver"
+                Text="1" TextColor="Black" FontSize="60"
+                Grid.Row="3" Grid.Column="0"
+                Clicked="Button_1_Clicked"
+                />
+            <Button
+                x:Name="Button_2"
+                Text="2" TextColor="Black" FontSize="60"
+                Background="Silver"
+                Grid.Row="3" Grid.Column="1"
+                Clicked="Button_2_Clicked"
+                />
+            <Button 
+                x:Name="Button_3"
+                Text="3" TextColor="Black" FontSize="60" 
+                Background="Silver" 
+                Grid.Row="3" Grid.Column="2"
+                Clicked="Button_3_Clicked"
+                />
+            <Button 
+                x:Name="Sum_Button"
+                Text="+" TextColor="white" FontSize="60"
+                Background="Orange"
+                Grid.Row="3" Grid.Column="3"
+                Clicked="Sum_Button_Clicked"
+                />
+            <Button
+                x:Name="Button_0"
+                Text="0" TextColor="Black" FontSize="60"
+                Background="Silver"
+                Grid.Row="4" Grid.Column="1"
+                HorizontalOptions="End"
+                WidthRequest="190"
+                Clicked="Button_0_Clicked"
+                />
+            <Button 
+                x:Name="Dot_Button"
+                Text="." TextColor="Black" FontSize="60" 
+                Background="Silver" 
+                Grid.Row="4" Grid.Column="2"
+                Clicked="Dot_Button_Clicked"
+                />
+            <Button 
+                x:Name="Equals_Button"
+                Text="=" TextColor="white" FontSize="60"
+                Background="Orange"
+                Grid.Row="4" Grid.Column="3"
+                Clicked="Equals_Button_Clicked"
+                />
+        </Grid>
+    </StackLayout>
+</ContentPage>
